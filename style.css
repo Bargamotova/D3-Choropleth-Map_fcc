@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #1f3648;
+  width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  height: 100dvh;
+  display: grid;
+  place-items: center;
+}
+
+#title_box {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #3b3b3b;
+}
+
+#title {
+  font-weight: 300;
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  margin-bottom: 0.5em;
+  color: #3b3b3b;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 40px;
+  background: #f3f3f3;
+  box-shadow: 0 0 15px hsla(0, 0%, 0%, 0.5);
+}
+
+svg {
+  margin: 0 auto;
+}
+
+#tooltip {
+  opacity: 0;
+  position: absolute;
+  background: hsla(0, 0%, 15%, 0.8);
+  border-radius: 3px;
+  color: #f1f1f1;
+  padding: 5px;
+  box-shadow: 0 0 10px hsla(207, 40%, 13%, 0.5);
+  text-align: left;
+  font-size: 12px;
+  line-height: 1.3;
+  font-weight: 600;
+  border: 1px solid #000;
+  transition: opacity 0.3s;
+}
+
+#tooltip span {
+  font-weight: 200;
+}
+
+.county:hover {
+  stroke: #111e29;
+  stroke-width: 1px;
+}
